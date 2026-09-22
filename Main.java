@@ -1,6 +1,14 @@
+
+
+
 public class Main{
     public static void main(String[] args){
-        System.out.println("test");
+        Task testTask = new Task("TESTTASK");
+        testTask.ToggleComplete();
+
+        CheckList list = new CheckList("TestList");
+        list.AddTask(testTask);
+        list.RemoveTask(testTask);
     }
 }
 
